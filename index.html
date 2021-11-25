@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanoob's Calci</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+    
+    <div class="container">
+        
+        <div class="box">
+            <div class="screen">
+                <input type="text" id="result">
+            </div>
+
+            <div class="buttons">
+                <div class="row">
+                    <button onclick="displayValue('9')" class="btn btn-outline-success ">9</button>
+                    <button onclick="displayValue('8')" class="btn btn-outline-success ">8</button>
+                    <button onclick="displayValue('7')" class="btn btn-outline-success ">7</button>
+                    <button  onclick="displayValue('+')" class="btn btn-outline-success ">+</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="displayValue('6')" class="btn btn-outline-success ">6</button>
+                    <button onclick="displayValue('5')" class="btn btn-outline-success ">5</button>
+                    <button onclick="displayValue('4')" class="btn btn-outline-success ">4</button>
+                    <button onclick="displayValue('-')" class="btn btn-outline-success  ">-</button>
+
+                </div>
+
+                <div class="row">
+                    <button onclick="displayValue('3')" class="btn btn-outline-success ">3</button>
+                    <button onclick="displayValue('2')" class="btn btn-outline-success ">2</button>
+                    <button  onclick="displayValue('1')" class="btn btn-outline-success ">1</button>
+                    <button onclick="displayValue('*')" class="btn btn-outline-success">*</button>
+
+                </div>
+
+                <div class="row">
+                    <button onclick="displayValue('/')" class="btn btn-outline-success ">/</button>
+                    <button onclick="displayValue('0')" class="btn btn-outline-success">0</button>
+                    <button onclick="displayValue('.')" class="btn btn-outline-success">.</button>
+                    <button onclick="evaluateExpression()"  class="btn btn-outline-success ">=</button>
+                </div>
+
+                <div>
+                    <button onclick="clearBox()" class="cbtn btn-outline-info">C</button>
+                    <button onclick="backSpace()" class="cbtn btn-outline-info"><</button>
+                </div>
+
+                
+
+            </div>
+            <!-- <div class="foot">
+                <h5>c Sanoob S</h5>
+
+            </div> -->
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
